@@ -51,9 +51,7 @@ This project replicates the Vision Transformer (ViT) architecture, which revolut
 ## 📚 Dataset
 
 The implementation includes training and evaluation on:
-- **CIFAR-10**: 32x32 color images, 10 classes
-- **CIFAR-100**: 32x32 color images, 100 classes
-- **ImageNet**: 224x224 images, 1000 classes (configurable)
+- **FoodVision_mini**
 
 ## 🚀 Getting Started
 
