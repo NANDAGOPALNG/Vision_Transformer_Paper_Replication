@@ -45,8 +45,6 @@ This project replicates the Vision Transformer (ViT) architecture, which revolut
 
 ### Model Variants:
 - **ViT-Base**: 12 layers, 768 hidden dim, 12 heads
-- **ViT-Large**: 24 layers, 1024 hidden dim, 16 heads
-- **ViT-Huge**: 32 layers, 1280 hidden dim, 16 heads
 
 ## 📚 Dataset
 
@@ -89,9 +87,8 @@ The notebook includes complete training loops with:
 - **Attention Visualizations**: Head-specific attention patterns
 
 ### Expected Results:
-- CIFAR-10: ~85-90% accuracy (depending on training configuration)
-- Convergence typically achieved within 50-100 epochs
-- Attention maps showing meaningful spatial patterns
+- FoodVision_mini: ~85-90% accuracy (depending on training configuration)
+
 
 ## 🔬 Key Insights from Replication
 
@@ -103,11 +100,10 @@ The notebook includes complete training loops with:
 ## 📈 Training Details
 
 ### Hyperparameters:
-- **Learning Rate**: 3e-4 (with cosine scheduling)
-- **Batch Size**: 512 (or largest feasible for hardware)
+- **Learning Rate**: 1e-4 (with cosine scheduling)
+- **Batch Size**: 32 (or largest feasible for hardware)
 - **Optimizer**: AdamW with weight decay
-- **Epochs**: 100-300 (dataset dependent)
-- **Warmup**: Linear warmup for first 10k steps
+- **Epochs**: 10 
 
 ### Data Augmentation:
 - Random resized crops
